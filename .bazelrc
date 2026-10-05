@@ -1,0 +1,7 @@
+# Флаги, которые будут применяться ТОЛЬКО на Windows (компилятор MSVC)
+build:windows --copt=/std:c++20
+build:windows --host_copt=/std:c++20
+
+# Флаги, которые будут применяться ТОЛЬКО на Linux (компилятор GCC/Clang в Docker)
+build:linux --copt=-std=c++20
+build:linux --host_copt=-std=c++20

@@ -1,0 +1,5 @@
+/nologo
+/OUT:bazel-out/x64_windows-fastbuild/bin/printer/printer.lib
+/MACHINE:X64
+bazel-out/x64_windows-fastbuild/bin/printer/_objs/printer/printer.obj
+/ignore:4221

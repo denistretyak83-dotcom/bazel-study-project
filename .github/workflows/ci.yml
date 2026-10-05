@@ -1,0 +1,30 @@
+name: Bazel CI
+
+# Пайплайн будет запускаться при каждом пуше (push) в ветку main или master
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    # Запускаем сборку на чистом облачном сервере с Ubuntu Linux
+    runs-on: ubuntu-latest
+
+    steps:
+    # Шаг 1: Скачиваем исходный код вашего репозитория на сервер
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Шаг 2: Устанавливаем Bazel в облачную систему
+    - name: Set up Bazel
+      uses: bazel-contrib/setup-bazel@0.3.0
+      with:
+        # Указываем версию Bazel, с которой мы работаем локально
+        bazel-version: 9.2.0
+
+    # Шаг 3: Запускаем автоматические тесты!
+    # На Linux нам не нужны Windows-переменные, запускаем чистую команду
+    - name: Run Bazel Tests
+      run: bazel test //...
