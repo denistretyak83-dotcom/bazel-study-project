@@ -1,5 +1,0 @@
-/nologo
-/OUT:bazel-out/x64_windows-fastbuild/bin/external/abseil-cpp+/absl/numeric/int128.lib
-/MACHINE:X64
-bazel-out/x64_windows-fastbuild/bin/external/abseil-cpp+/absl/numeric/_objs/int128/int128.obj
-/ignore:4221

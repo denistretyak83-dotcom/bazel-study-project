@@ -1,5 +1,0 @@
-c++-link-dynamic-library
-c++-link-executable
-lto-index-for-dynamic-library
-lto-index-for-executable
-objc-executable

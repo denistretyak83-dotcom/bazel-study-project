@@ -1,2 +1,0 @@
-c++-link-nodeps-dynamic-library
-lto-index-for-nodeps-dynamic-library

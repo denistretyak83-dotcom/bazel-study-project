@@ -1,5 +1,0 @@
-/nologo
-/OUT:bazel-out/x64_windows-fastbuild/bin/external/abseil-cpp+/absl/types/source_location.lib
-/MACHINE:X64
-bazel-out/x64_windows-fastbuild/bin/external/abseil-cpp+/absl/types/_objs/source_location/source_location.obj
-/ignore:4221
